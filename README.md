@@ -43,7 +43,8 @@ To set up the environment, follow the steps below:
     python3 -m venv venv
     source venv/bin/activate  
     ```
-On Windows, use `venv\Scripts\activate`
+  On Windows, use `venv\Scripts\activate`
+
 5. **Install the required packages**:
     ```bash
     pip install -r requirements.txt
