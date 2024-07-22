@@ -29,16 +29,22 @@ To set up the environment, follow the steps below:
     ```
 2. **Install python 3.11** (Must use python 3.11 ):
     ```bash
-    sudo update-alternatives --install /usr/bin/python 
-   python /usr/bin/python3. 11 1
+    sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 2
     ```
-2. **Create a virtual environment** (optional but recommended):
+ 3. **switch to python 3.11** :
+    ```bash
+    sudo update-alternatives --config python
+   
+    ```
+    and press 2
+     
+4. **Create a virtual environment** (optional but recommended):
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate  
     ```
-
-3. **Install the required packages**:
+On Windows, use `venv\Scripts\activate`
+5. **Install the required packages**:
     ```bash
     pip install -r requirements.txt
     ```
