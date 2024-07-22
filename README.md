@@ -24,10 +24,14 @@ To set up the environment, follow the steps below:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/lunar-lander-gymnasium-tianshou.git
-    cd lunar-lander-gymnasium-tianshou
+    git clone https://github.com/YuriLizi/LunarLand_RL_course.git
+    cd LunarLand_RL_course
     ```
-
+2. **Install python 3.11** (Must use python 3.11 ):
+    ```bash
+    sudo update-alternatives --install /usr/bin/python 
+   python /usr/bin/python3. 11 1
+    ```
 2. **Create a virtual environment** (optional but recommended):
     ```bash
     python3 -m venv venv
@@ -46,6 +50,9 @@ To install these packages individually:
 pip install gymnasium tianshou
 ```
 
+3. **Run the training**:
+
+      run "train_dqn.py" for DQN training and run "train_double_dqn.py" for double DQN training
 
 
 ## Troubleshoot
@@ -55,4 +62,8 @@ pip install gymnasium tianshou
      pip install swig 
      pip install gym[box2d]
 ```
-
+In case of this error:
+```
+ModuleNotFoundError: No module named 'tianshou.utils.space_info'
+```
+Make sure you are using python 3.11 
