@@ -74,3 +74,10 @@ In case of this error:
 ModuleNotFoundError: No module named 'tianshou.utils.space_info'
 ```
 Make sure you are using python 3.11 
+
+If you still not manage to run it, the last option is to download the tianshou repository and use its interpreter:
+```bash
+     git clone git@github.com:thu-ml/tianshou.git
+     cd tianshou
+     poetry install
+```
